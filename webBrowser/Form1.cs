@@ -37,6 +37,8 @@ namespace webBrowser
         //Core navigation method
         private void NavigateToPage()
         {
+            navigateButtn.Enabled = false;
+            textBox1.Enabled = false;
             toolStripStatusLabel1.Text = "Navigation in progress!";
             webBrowser1.Navigate(textBox1.Text);
         }
@@ -65,6 +67,31 @@ namespace webBrowser
             {
                 toolStripProgressBar1.ProgressBar.Value = (int)(e.CurrentProgress * 100 / e.MaximumProgress);
             }
+        }
+
+        private void refreshButtn_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Refresh();
+        }
+
+        private void stopBttn_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Stop();
+        }
+
+        private void homeBttn_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
         }
     }
 }

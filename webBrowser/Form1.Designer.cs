@@ -159,6 +159,7 @@
             // 
             // homeBttn
             // 
+            this.homeBttn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.homeBttn.Location = new System.Drawing.Point(637, 40);
             this.homeBttn.Name = "homeBttn";
             this.homeBttn.Size = new System.Drawing.Size(75, 20);
@@ -169,6 +170,7 @@
             // 
             // refreshButtn
             // 
+            this.refreshButtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.refreshButtn.Location = new System.Drawing.Point(799, 40);
             this.refreshButtn.Name = "refreshButtn";
             this.refreshButtn.Size = new System.Drawing.Size(78, 19);
@@ -179,6 +181,7 @@
             // 
             // stopBttn
             // 
+            this.stopBttn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.stopBttn.Location = new System.Drawing.Point(718, 39);
             this.stopBttn.Name = "stopBttn";
             this.stopBttn.Size = new System.Drawing.Size(75, 21);
